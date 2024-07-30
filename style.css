@@ -197,15 +197,16 @@ text-align: center;
 }
 
 .reviews-wrapper {
-background: url(/reviews-background.png) no-repeat center/cover, url(/flowers.png) no-repeat left/cover;
-
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: url(/reviews-background.png) no-repeat center/cover;
 }
 .container {
 }
 .reviews {
-
 }
 .reviews-main-text {
+    margin-top: 4px;
 color: white;
 font-size: 48px;
 text-align: center;
@@ -218,6 +219,7 @@ font-style: normal;
 .reviews-card {
     display: flex;
 justify-content: space-between;
+margin-bottom: 4px;
 }
 
 .reviews-card-item:first-child{
@@ -237,28 +239,109 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
 }
 .reviews-card-item {
     width: 255px;
-    height: 292px;
-    top: 1668px;
-    left: 592px;
-    gap: 0px;
-    border-radius: 15px 0px 0px 0px;
+    border-radius: 15px;
+    padding: 50px 14px 30px 14px;
     opacity: 0px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 .reviews-text {
 }
 .reviews-date {
+    font-size: 14px;
+    color: #d8d8d8;
+    margin-bottom: 48px;
 }
 .reviews-user {
+    position: relative;
 }
 .reviews-image {
 }
 .reviews-name {
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 1px;
+    left: 36px;
 }
 .reviews-user-date {
+    font-size: 12px;
+    color: #d8d8d8;
+    position: absolute;
+    top: 18px;
+    left: 35px;
+}
+
+.order-wrapper {
+    background: url(/order-background.png) no-repeat center/cover;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.order {
+}
+.order-title {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 33px;
+    font-family: "Playfair Display", serif;
+}
+.order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order-form input{
+    padding: 14px 24px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    border: none;
+    width: 580px;
+}
+input.order-form-email{
+    width: 690px;
+}
+.order-form-country {
+}
+.order-form-city {
+}
+.order-form-adress {
+}
+.order-form-button {
+}
+.order-form .header-button{
+    margin: 0px;
+    border: none;
+}
+.footer-wrapper{
+    background: #021635;
+}
+.footer-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer-question-item-list{
+    font-weight: 400;
+font-size: 24px;
+color: #fff;
+list-style: none;
+}
+.footer-bottom .footer-question-item-list{
+    font-weight: 400;
+font-size: 18px;
+color: #fff;
+}
+.footer-bottom .header-name-logo{
+    font-weight: 400;
+font-size: 24px;
+color: #fff;
 }
