@@ -5,6 +5,9 @@
  margin: 0;
  padding: 0;
 }
+button{
+    cursor: pointer;
+}
 .page-wrapper {
 
 
@@ -40,6 +43,7 @@ column-gap:  28px;
     color: #c7c7c7;
     transition: 0.4s;
     list-style: none;
+    cursor: pointer;
 }
 .nav-list-page:hover{
     font-weight: 400;
@@ -66,6 +70,7 @@ transition: all .3s;
 }
 
 .header-wrapper {
+    padding-bottom: 183px;
 background: url(/header-background.png) no-repeat center/cover;
 }
 .container {
@@ -199,6 +204,8 @@ text-align: center;
 .reviews-wrapper {
     margin-top: 2px;
     margin-bottom: 2px;
+    padding-bottom: 114px;
+    padding-top: 25px;
     background: url(/reviews-background.png) no-repeat center/cover;
 }
 .container {
@@ -322,12 +329,17 @@ input.order-form-email{
 }
 .footer-wrapper{
     background: #021635;
+    padding-top: 45px;
 }
 .footer-question{
     display: flex;
     align-items: center;
     justify-content: space-between;
     
+    
+}
+.footer-question:not(:last-child){
+    margin-bottom: 20px;
 }
 .footer-question-item-list{
     font-weight: 400;
@@ -339,9 +351,19 @@ list-style: none;
     font-weight: 400;
 font-size: 18px;
 color: #fff;
+
 }
 .footer-bottom .header-name-logo{
     font-weight: 400;
 font-size: 24px;
 color: #fff;
+margin-top: -40px;
+    margin-left: 20px;
+}
+.footer-question-item .footer-email{
+    text-align: right;
+    text-decoration: underline;
+}
+.footer-email .footer-question-item-list{
+    text-decoration: underline;
 }
